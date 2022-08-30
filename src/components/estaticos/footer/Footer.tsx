@@ -4,6 +4,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Typography, Grid } from "@material-ui/core";
 import { Box } from "@mui/material";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -15,7 +16,7 @@ function Footer() {
         alignItems="center"
       >
         <Grid alignItems="center" item xs={12}>
-          <Box style={{ backgroundColor: "#3F51B5", height: "120px" }}>
+          <Box className="box1">
             <Box
               paddingTop={1}
               display="flex"
@@ -26,30 +27,39 @@ function Footer() {
                 variant="h5"
                 align="center"
                 gutterBottom
-                style={{ color: "white" }}
+                className="textos"
               >
                 Siga-nos nas redes sociais{" "}
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
-              <a href="https://www.facebook.com/" target="_blank">
-                <FacebookIcon style={{ fontSize: 60, color: "white" }} />
+              <a
+                href="https://www.facebook.com/generationbrasil"
+                target="_blank"
+              >
+                <FacebookIcon className="redes" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <InstagramIcon style={{ fontSize: 60, color: "white" }} />
+              <a
+                href="https://www.instagram.com/generationbrasil/"
+                target="_blank"
+              >
+                <InstagramIcon className="redes" />
               </a>
-              <a href="https://www.linkedin.com/" target="_blank">
-                <LinkedInIcon style={{ fontSize: 60, color: "white" }} />
+              <a
+                href="https://www.linkedin.com/school/generationbrasil/"
+                target="_blank"
+              >
+                <LinkedInIcon className="redes" />
               </a>
             </Box>
           </Box>
-          <Box style={{ backgroundColor: "#303F9F", height: "60px" }}>
+          <Box className="box2">
             <Box paddingTop={1}>
               <Typography
                 variant="subtitle2"
                 align="center"
                 gutterBottom
-                style={{ color: "white" }}
+                className="textos"
               >
                 © 2020 Copyright:
               </Typography>
@@ -59,7 +69,7 @@ function Footer() {
                 <Typography
                   variant="subtitle2"
                   gutterBottom
-                  style={{ color: "white" }}
+                  className="textos"
                   align="center"
                 >
                   brasil.generation.org

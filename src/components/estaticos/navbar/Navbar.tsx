@@ -1,43 +1,47 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 function Navbar() {
   return (
     <>
       <AppBar position="static">
         <Toolbar variant="dense">
-          <Box style={{ cursor: "pointer" }}>
+          <Box className="cursor">
             <Typography variant="h5" color="inherit">
-              Blog Pessoal
+              BlogPessoal
             </Typography>
           </Box>
 
           <Box display="flex" justifyContent="start">
-            <Box mx={1} style={{ cursor: "pointer" }}>
+            <Box mx={1} className="cursor">
               <Typography variant="h6" color="inherit">
-                Home
+                home
               </Typography>
             </Box>
-            <Box mx={1} style={{ cursor: "pointer" }}>
+            <Box mx={1} className="cursor">
               <Typography variant="h6" color="inherit">
-                Postagens
+                postagens
               </Typography>
             </Box>
-            <Box mx={1} style={{ cursor: "pointer" }}>
+            <Box mx={1} className="cursor">
               <Typography variant="h6" color="inherit">
-                Temas
+                temas
               </Typography>
             </Box>
-            <Box mx={1} style={{ cursor: "pointer" }}>
+            <Box mx={1} className="cursor">
               <Typography variant="h6" color="inherit">
-                Cadastrar Tema
+                cadastrar tema
               </Typography>
             </Box>
-            <Box mx={1} style={{ cursor: "pointer" }}>
-              <Typography variant="h6" color="inherit">
-                Logout
-              </Typography>
-            </Box>
+            <Link to="/login" className="text-decorator-none">
+              <Box mx={1} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  logout
+                </Typography>
+              </Box>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
