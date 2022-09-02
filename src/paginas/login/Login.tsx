@@ -16,6 +16,7 @@ function Login() {
     usuario: "",
     senha: "",
     foto: "",
+    token: "",
   });
 
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
@@ -26,7 +27,7 @@ function Login() {
   }
 
   useEffect(() => {
-    if (token != "") {
+    if (token !== "") {
       navigate("/home");
     }
   }, [token]);

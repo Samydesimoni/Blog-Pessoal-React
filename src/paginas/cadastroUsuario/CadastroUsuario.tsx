@@ -41,15 +41,28 @@ function CadastroUsuario() {
       [e.target.name]: e.target.value,
     });
   }
-  async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+  async function cadastrar(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (confirmarSenha == user.senha) {
-      cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-      alert("Usuario cadastrado com sucesso");
+
+    // Estrutura Condicional que verifica se as senhas batem e se a Senha tem mais de 8 caracteres
+    if (confirmarSenha === user.senha && user.senha.length >= 8) {
+      //Tenta executar o cadastro
+      try {
+        await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
+        alert("Usuário cadastrado com sucesso");
+
+        //Se houver erro, pegue o Erro e retorna uma msg
+      } catch (error) {
+        console.log(`Error: ${error}`);
+
+        //Pode modificar a msg de acordo com o erro
+        alert("Usuário já existente");
+      }
     } else {
-      alert(
-        "Dados inconsistentes. Favor verificar as informações de cadastro."
-      );
+      alert("Insira no miníno 8 caracteres na senha."); // Mensagem que indica a quantidade minima de caracteres
+
+      setUser({ ...user, senha: "" }); // Reinicia o campo de Senha
+      setConfirmarSenha(""); // Reinicia o campo de Confirmar Senha
     }
   }
   return (
@@ -57,7 +70,7 @@ function CadastroUsuario() {
       <Grid item xs={6} className="imagem2"></Grid>
       <Grid item xs={6} alignItems="center">
         <Box paddingX={10}>
-          <form onSubmit={onSubmit}>
+          <form onSubmit={cadastrar}>
             <Typography
               variant="h3"
               gutterBottom
