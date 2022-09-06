@@ -1,3 +1,11 @@
+.bg {
+  background-color: #2f3640;
+}
+
+.fonte {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+}
 .cursor {
   cursor: pointer;
   color: white;

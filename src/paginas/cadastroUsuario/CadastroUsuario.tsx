@@ -66,7 +66,13 @@ function CadastroUsuario() {
     }
   }
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
+    <Grid
+      container
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      className="fundo"
+    >
       <Grid item xs={6} className="imagem2"></Grid>
       <Grid item xs={6} alignItems="center">
         <Box paddingX={10}>
@@ -134,7 +140,12 @@ function CadastroUsuario() {
                   Cancelar
                 </Button>
               </Link>
-              <Button type="submit" variant="contained" color="primary">
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                className="fonteC"
+              >
                 Cadastrar
               </Button>
             </Box>

@@ -1,16 +1,19 @@
 .caixa {
-  background-color: #3f51b5;
+  background-color: #000;
 }
 
 .titulo {
   color: white !important;
   font-weight: bold !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }
 
 .botao {
   border-color: white !important;
-  background-color: #3f51b5;
   color: white !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }
 
 .postagens {

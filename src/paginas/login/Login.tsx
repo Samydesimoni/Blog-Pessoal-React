@@ -45,7 +45,13 @@ function Login() {
   }
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
+    <Grid
+      container
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      className="fundo"
+    >
       <Grid alignItems="center" xs={6}>
         <Box paddingX={20}>
           <form onSubmit={onSubmit}>
@@ -81,14 +87,24 @@ function Login() {
               fullWidth
             />
             <Box marginTop={2} textAlign="center">
-              <Button type="submit" variant="contained" color="primary">
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                className="textos1 cor"
+              >
                 Logar
               </Button>
             </Box>
           </form>
           <Box display="flex" justifyContent="center" marginTop={2}>
             <Box marginRight={1}>
-              <Typography variant="subtitle1" gutterBottom align="center">
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                align="center"
+                className="textos1"
+              >
                 Não tem uma conta?
               </Typography>
             </Box>

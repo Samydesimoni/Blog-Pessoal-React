@@ -1,3 +1,12 @@
 .titulo {
   font-weight: bold;
 }
+
+.bgtp {
+  background-color: #2f3640 !important;
+}
+
+.textos3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+}

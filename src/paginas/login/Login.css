@@ -1,5 +1,14 @@
+.fundo {
+  background-color: #dcdde1 !important;
+}
+
 .textos1 {
   font-weight: bold !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+}
+.cor {
+  background-color: #000 !important;
 }
 
 .imagem {

@@ -7,10 +7,25 @@
   background-position: center;
 }
 
+.fundo {
+  background-color: #dcdde1 !important;
+}
+
 .textos2 {
   font-weight: bold !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }
 
 .btnCancelar {
   margin-right: 20px !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  background-color: #000 !important;
+}
+
+.fonteC {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  background-color: #000 !important;
 }
