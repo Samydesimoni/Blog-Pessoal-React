@@ -53,7 +53,7 @@ function ListaTema() {
             <CardActions>
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link
-                  to={`formularioTema/${tema.id}`}
+                  to={`/formularioTema/${tema.id}`}
                   className="text-decorator-none"
                 >
                   <Box mx={1}>
@@ -68,7 +68,7 @@ function ListaTema() {
                   </Box>
                 </Link>
                 <Link
-                  to={`deletarTema/${tema.id}`}
+                  to={`/deletarTema/${tema.id}`}
                   className="text-decorator-none"
                 >
                   <Box mx={1}>

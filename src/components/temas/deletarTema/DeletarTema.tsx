@@ -40,14 +40,19 @@ function DeletarTema() {
     });
   }
 
-  function sim() {
+  async function sim() {
     navigate("/temas");
-    deleteId(`/temas/${id}`, {
-      headers: {
-        Authorization: token,
-      },
-    });
-    alert("Tema deletado com sucesso");
+    try {
+      await deleteId(`/temas/${id}`, {
+        headers: {
+          Authorization: token,
+        },
+      });
+
+      alert("Tema deletado com sucesso");
+    } catch (error) {
+      alert("Erro ao deletar");
+    }
   }
 
   function nao() {
