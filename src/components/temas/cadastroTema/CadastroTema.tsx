@@ -100,8 +100,9 @@ function CadastroTema() {
           color="textSecondary"
           component="h1"
           align="center"
+          className="fonteCadastroP"
         >
-          Formulário de cadastro tema
+          Formulário de Cadastro de Tema
         </Typography>
         <TextField
           value={tema.descricao}
@@ -113,7 +114,12 @@ function CadastroTema() {
           margin="normal"
           fullWidth
         />
-        <Button type="submit" variant="contained" color="primary">
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          className="fonteCadastro bgCadastroP"
+        >
           Finalizar
         </Button>
       </form>

@@ -40,7 +40,7 @@ function TabPostagem() {
             gutterBottom
             color="textPrimary"
             align="justify"
-            className="textos3"
+            className="textoSobre"
           >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Dignissimos ut eveniet natus totam et, voluptate dicta tempore

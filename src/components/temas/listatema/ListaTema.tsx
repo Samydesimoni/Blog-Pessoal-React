@@ -44,9 +44,13 @@ function ListaTema() {
     <>
       {temas.map((tema) => (
         <Box m={2}>
-          <Card variant="outlined">
+          <Card variant="outlined" className="bgListaP">
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography
+                color="textSecondary"
+                gutterBottom
+                className="fonteListaP"
+              >
                 Tema
               </Typography>
               <Typography variant="h5" component="h2">
@@ -62,9 +66,9 @@ function ListaTema() {
                   <Box mx={1}>
                     <Button
                       variant="contained"
-                      className="marginLeft"
                       size="small"
                       color="primary"
+                      className="marginLeftListaP fonteListaP bgListaPB"
                     >
                       atualizar
                     </Button>
@@ -75,7 +79,12 @@ function ListaTema() {
                   className="text-decorator-none"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button
+                      variant="contained"
+                      size="small"
+                      color="secondary"
+                      className="marginLeftListaP fonteListaP bgListaPB2"
+                    >
                       deletar
                     </Button>
                   </Box>

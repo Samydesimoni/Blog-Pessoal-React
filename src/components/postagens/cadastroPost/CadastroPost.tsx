@@ -124,8 +124,9 @@ function CadastroPost() {
           color="textSecondary"
           component="h1"
           align="center"
+          className="fonteCadastroP"
         >
-          Formulário de cadastro postagem
+          Formulário de Cadastro de Postagem
         </Typography>
         <TextField
           value={postagem.titulo}
@@ -165,8 +166,15 @@ function CadastroPost() {
               <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
             ))}
           </Select>
-          <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-          <Button type="submit" variant="contained" color="primary">
+          <FormHelperText className="fonteCadastroP">
+            Escolha um tema para a postagem
+          </FormHelperText>
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            className="fonteCadastroP bgCadastroP"
+          >
             Finalizar
           </Button>
         </FormControl>

@@ -59,10 +59,14 @@ function DeletarPostagem() {
   return (
     <>
       <Box m={2}>
-        <Card variant="outlined">
+        <Card variant="outlined" className="bgListaP">
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
+              <Typography
+                color="textSecondary"
+                gutterBottom
+                className="fonteCadastroP"
+              >
                 Deseja deletar a Postagem:
               </Typography>
               <Typography color="textSecondary">{post?.titulo}</Typography>
@@ -74,7 +78,7 @@ function DeletarPostagem() {
                 <Button
                   onClick={sim}
                   variant="contained"
-                  className="marginLeft"
+                  className="marginLeft fonteCadastroP bgCadastroP"
                   size="large"
                   color="primary"
                 >
@@ -87,6 +91,7 @@ function DeletarPostagem() {
                   variant="contained"
                   size="large"
                   color="secondary"
+                  className="fonteCadastroP bgListaPB2"
                 >
                   Não
                 </Button>

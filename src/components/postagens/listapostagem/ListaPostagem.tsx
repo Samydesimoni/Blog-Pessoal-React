@@ -45,7 +45,7 @@ function ListaPostagem() {
     <>
       {posts.map((post) => (
         <Box m={2}>
-          <Card variant="outlined">
+          <Card variant="outlined" className="bgListaP fonteListaP">
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Postagens
@@ -69,9 +69,9 @@ function ListaPostagem() {
                   <Box mx={1}>
                     <Button
                       variant="contained"
-                      className="marginLeft"
                       size="small"
                       color="primary"
+                      className="marginLeftListaP fonteListaP bgListaPB"
                     >
                       atualizar
                     </Button>
@@ -82,7 +82,12 @@ function ListaPostagem() {
                   className="text-decorator-none"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button
+                      variant="contained"
+                      size="small"
+                      color="secondary"
+                      className="marginLeftListaP fonteListaP bgListaPB2"
+                    >
                       deletar
                     </Button>
                   </Box>

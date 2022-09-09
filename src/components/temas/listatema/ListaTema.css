@@ -1,3 +1,25 @@
 .text-decorator-none {
   text-decoration: none;
 }
+
+.fonteListaP {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+}
+
+.bgListaP {
+  background-color: #f3f3f5 !important;
+}
+
+.fonteListaP {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+}
+
+.marginLeftListaP {
+  margin-left: 0px !important;
+}
+
+.bgListaPB {
+  background-color: #000 !important;
+}

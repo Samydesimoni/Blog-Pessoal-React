@@ -1,5 +1,8 @@
 .titulo {
   font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  color: #000 !important;
 }
 
 .bgtp {
@@ -9,4 +12,11 @@
 .textos3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif !important;
+}
+
+.textoSobre {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  padding-bottom: 38px !important;
+  font-weight: 500 !important;
 }

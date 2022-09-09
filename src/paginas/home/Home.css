@@ -17,9 +17,15 @@
 }
 
 .postagens {
-  background-color: white;
+  background-color: #dcdde1 !important;
 }
 
 .text-decorator-none {
   text-decoration: none;
+}
+
+.tituloHome {
+  color: #fff !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }

@@ -4,5 +4,8 @@
 
 .btnModal {
   border-color: white !important;
-  background-color: white !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }

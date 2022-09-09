@@ -38,7 +38,7 @@ function Home() {
               color="textPrimary"
               component="h3"
               align="center"
-              className="titulo"
+              className="tituloHome"
             >
               Seja bem vindo(a)!
             </Typography>
@@ -48,7 +48,7 @@ function Home() {
               color="textPrimary"
               component="h5"
               align="center"
-              className="titulo"
+              className="tituloHome"
             >
               expresse aqui os seus pensamentos e opiniões sobre música!
             </Typography>
