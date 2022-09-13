@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
 import "./CadastroUsuario.css";
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
   let navigate = useNavigate();
@@ -49,17 +50,44 @@ function CadastroUsuario() {
       //Tenta executar o cadastro
       try {
         await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-        alert("Usuário cadastrado com sucesso");
+        toast.success("Usuário cadastrado com sucesso!", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          theme: "dark",
+          progress: undefined,
+        });
 
         //Se houver erro, pegue o Erro e retorna uma msg
       } catch (error) {
         console.log(`Error: ${error}`);
 
         //Pode modificar a msg de acordo com o erro
-        alert("Usuário já existente");
+        toast.info("Usuário já existente!", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          theme: "dark",
+          progress: undefined,
+        });
       }
     } else {
-      alert("Insira no miníno 8 caracteres na senha."); // Mensagem que indica a quantidade minima de caracteres
+      toast.info("Insira no mínimo 8 caracteres na campo de senha!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        theme: "dark",
+        progress: undefined,
+      }); // Mensagem que indica a quantidade minima de caracteres
 
       setUser({ ...user, senha: "" }); // Reinicia o campo de Senha
       setConfirmarSenha(""); // Reinicia o campo de Confirmar Senha
